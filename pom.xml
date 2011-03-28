@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.silverpeas</groupId>
+    <artifactId>assembly-silverpeas</artifactId>
+    <version>5.6-SNAPSHOT</version>
+  </parent>
+
+  <scm>
+    <connection>scm:git:git@github.com:Silverpeas/Assembly-Silverpeas-JBoss4.git</connection>
+    <developerConnection>scm:git:git@github.com:Silverpeas/Assembly-Silverpeas-JBoss4.git</developerConnection>
+    <url>http://gitub.com/Silverpeas/Assembly-Silverpeas-JBoss4.git</url>
+  </scm>
+
+  <packaging>pom</packaging>
+  <groupId>com.silverpeas</groupId>
+  <artifactId>assembly-silverpeas-jboss4</artifactId>
+  <name>Assembly Silverpeas For JBoss 4</name>
+
+  <dependencies>
+    <!-- dependencies required for running in JBoss 4 -->
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>xalan</groupId>
+      <artifactId>xalan</artifactId>
+      <scope>compile</scope>
+      <version>2.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ws.xmlrpc</groupId>
+      <artifactId>xmlrpc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.metaparadigm</groupId>
+      <artifactId>json-rpc</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.javax.persistence</groupId>
+      <artifactId>hibernate-jpa-2.0-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.transaction</groupId>
+      <artifactId>jta</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>aopalliance</groupId>
+      <artifactId>aopalliance</artifactId>
+      <scope>compile</scope>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+
+</project>
